@@ -2,6 +2,7 @@
   "compilerOptions": {
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
     "esModuleInterop": false,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
@@ -14,7 +15,12 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-    "types": ["@testing-library/jest-dom", "jest", "vite/client"],
+    "types": [
+      "@testing-library/jest-dom",
+      "jest",
+      "vite/client",
+      "vite-plugin-svgr/client"
+    ],
     "useDefineForClassFields": true
   },
   "include": ["src"],

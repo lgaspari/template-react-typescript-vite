@@ -1,0 +1,29 @@
+html,
+body {
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.highlight {
+  color: #007fff;
+  display: block;
+  font-weight: 700;
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 4rem;
+  text-align: center;
+}

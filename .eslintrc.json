@@ -20,6 +20,9 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    // Warn about console usage.
+    "no-console": "warn",
+
     // Avoid needing to specify a display name for components.
     "react/display-name": "off",
 
