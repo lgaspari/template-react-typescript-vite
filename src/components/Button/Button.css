@@ -1,23 +1,15 @@
 .button {
   align-items: center;
-  background-color: #007fff;
   border: 0;
   border-radius: 0.5rem;
-  box-shadow:
-    0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  color: #fff;
   cursor: pointer;
   display: inline-flex;
   font-family: sans-serif;
   font-weight: 700;
-  font-size: 1rem;
   justify-content: center;
   margin: 0;
   min-width: 64px;
   outline: 0;
-  padding: 1rem 2rem;
   text-decoration: none;
   text-transform: uppercase;
   transition:
@@ -29,7 +21,20 @@
   vertical-align: middle;
 }
 
-.button:hover {
+.button--disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.button--primary {
+  background-color: #007fff;
+  box-shadow:
+    0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  color: #fff;
+}
+.button--primary:hover {
   background-color: #1976d2;
   box-shadow:
     0px 2px 4px -1px rgba(0, 0, 0, 0.2),
@@ -37,10 +42,57 @@
     0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   text-decoration: none;
 }
-
-.button:active {
+.button--primary:active {
   box-shadow:
     0px 5px 5px -3px rgba(0, 0, 0, 0.2),
     0px 8px 10px 1px rgba(0, 0, 0, 0.14),
     0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.button--primary.button--disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+  box-shadow: none;
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.button--secondary {
+  background-color: transparent;
+  box-shadow:
+    0px 0px 0px 1px #ced4da inset,
+    0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  color: #000;
+}
+.button--secondary:hover {
+  background-color: #fafafa;
+  box-shadow:
+    0px 0px 0px 1px #ced4da inset,
+    0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+}
+.button--secondary:active {
+  box-shadow:
+    0px 0px 0px 1px #ced4da inset,
+    0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.button--secondary.button--disabled {
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 0px 0px 1px #ced4da inset;
+}
+
+.button--small {
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+}
+.button--medium {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+.button--large {
+  font-size: 1.25rem;
+  padding: 1.5rem 3rem;
 }

@@ -13,6 +13,7 @@ Here, you will find a **development** (not production yet) ready-to-use template
 - **Jest:** testing framework
 - **Prettier:** helps format the code automatically
 - **React Testing Library:** testing library to make assertions easier
+- **[ADD MORE INFORMATION] Storybook:** document your components
 
 Please make sure to install the [recommended extensions](./.vscode/extensions.json) for this workspace.
 

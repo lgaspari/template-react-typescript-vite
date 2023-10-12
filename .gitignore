@@ -1,6 +1,7 @@
 # build
 dist
 dist-ssr
+storybook-static
 
 # coverage directory used by tools like istanbul
 coverage
